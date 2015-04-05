@@ -1,0 +1,27 @@
+ $(document).ready(function(){
+           
+           $(".btn-menu").click(function() {
+               $("#nav").addClass("nav-open");
+           });
+            $(".close").click(function() {
+               $("#nav").removeClass("nav-open");
+           });
+       });
+
+      
+//Smooth Scroll
+
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1500);
+        return false;
+      }
+    }
+  });
+})

@@ -1,0 +1,383 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: white;
+  width: 100%;
+  color: #4d4d4d;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  overflow-x: hidden; }
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+h2 {
+  font-size: 35px; }
+
+::-moz-selection {
+  background-color: #133;
+  color: white; }
+
+::selection {
+  background-color: #133;
+  color: white; }
+
+header {
+  position: absolute;
+  top: 0;
+  height: 150px;
+  width: 100%;
+  background: #e7efe7;
+  border-bottom: 7px solid #299;
+  z-index: 5;
+  font-weight: 900; }
+
+header h2 {
+  margin: 50px 45px;
+  font-size: 50px;
+  color: #333; }
+
+header .btn-menu {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: block;
+  float: right;
+  color: #333;
+  font-size: 75px;
+  margin: 0 20px 0 0;
+  -webkit-text-stroke-width: 5px;
+  text-shadow: 50px 0 50px tomato; }
+
+header .btn-menu:active {
+  -webkit-text-stroke-width: 7px; }
+
+nav {
+  position: relative;
+  top: 50%;
+  height: 50px;
+  float: right;
+  margin-right: -50px;
+  border: 7px solid #333;
+  background-color: white;
+  box-sizing: content-box !important;
+  visibility: hidden;
+  -ms-transform: translateX(100%) translateY(-50%);
+  transform: translateX(100%) translateY(-50%);
+  -webkit-transform: translateX(100%) translateY(-50%);
+  -webkit-filter: blur(100px);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+.nav-open {
+  visibility: visible;
+  -ms-transform: translateX(0) translateY(-50%);
+  transform: translateX(0) translateY(-50%);
+  -webkit-transform: translateX(0) translateY(-50%);
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+nav a {
+  display: inline-block;
+  height: 100%;
+  line-height: 50px;
+  background: #333;
+  color: white;
+  padding: 0 20px;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out; }
+
+nav a:hover {
+  color: #299; }
+
+nav a:last-child:hover {
+  background-color: #299;
+  color: white; }
+
+.container {
+  position: absolute;
+  top: 150px;
+  width: 100%; }
+
+.container h2 {
+  text-align: center;
+  margin: 20px 0;
+  color: #404040; }
+
+.btn {
+  display: block;
+  text-decoration: none;
+  color: white;
+  width: 300px;
+  background-color: tomato;
+  text-align: center;
+  padding: 20px 0;
+  margin: 50px 5px;
+  box-shadow: 0 5px 0;
+  border-radius: 2px 2px 0 0, 0 0 5px white;
+  background-image: -webkit-repeating-linear-gradient(45deg, transparent 0, transparent 55%, white 0, white);
+  background-image: repeating-linear-gradient(tomato);
+  background-blend-mode: soft-light;
+  transition: all 400ms ease-in;
+  -webkit-transition: all 400ms ease-in; }
+
+.btn:hover {
+  box-shadow: none; }
+
+.btn-container {
+  background: #333;
+  padding: 50px 0;
+  box-shadow: 0 1px 1px #333;
+  -webkit-perspective: 1000px;
+  text-align: center; }
+
+.btn-container .btn {
+  display: inline-block; }
+
+.ribbon {
+  text-transform: uppercase;
+  color: #233;
+  font-size: 25px;
+  padding: 0 50px;
+  height: 75px;
+  line-height: 75px;
+  background: white;
+  margin: 50px auto;
+  width: 300px; }
+
+.ribbon::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid white;
+  margin: 0 auto; }
+
+.r-list {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background: #333;
+  padding: 0;
+  font-weight: 100; }
+
+.r-list a {
+  display: block;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 33.3%;
+  -ms-flex: 0 0 33.3%;
+  flex: 0 0 33.3%;
+  color: white;
+  height: 50vh;
+  line-height: 50vh;
+  text-align: center;
+  background-color: #2bc3c3;
+  background-blend-mode: multiply;
+  font-size: 30px;
+  border-bottom: 5px solid #90cccc;
+  border-right: 5px solid #90cccc;
+  -webkit-transition: all .3s ease-in; }
+
+.r-list a:nth-child(3n) {
+  border-right: none; }
+
+.wrapper-2 {
+  padding: 50px 0 0; }
+
+.wrapper-2 .r-list a:hover {
+  background-color: #333;
+  background-position: 50% 50%; }
+
+.wrapper-2 .r-list a:nth-child(1) {
+  background-image: url(https://shop.smashingmagazine.com/media/catalog/product/cache/1/image/342x365/9df78eab33525d08d6e5fb8d27136e95/i/p/ipad-sb4-342-365px.png); }
+
+.wrapper-2 .r-list a:nth-child(2) {
+  background-image: url(http://playgroundinc.com/images/people/adam.jpg:large); }
+
+.wrapper-2 .r-list a:nth-child(3) {
+  background-image: url(https://pbs.twimg.com/media/B8ClmhXCUAAZSSl.jpg); }
+
+.wrapper-3 {
+  padding: 50px 0 0; }
+
+.wrapper-3 .p-list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  margin: 50px 0; }
+
+.wrapper-3 .p-list-container .profile {
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-flex-basis: 45%;
+  margin-top: 15px; }
+
+.wrapper-3 .p-list-container .profile img {
+  float: left;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #333;
+  margin-right: 10px;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 90%, 0% 0%);
+  -webkit-shape-outside: circle();
+  shape-outside: circle(); }
+
+.wrapper-3 .p-list-container .profile .profile-content {
+  font-weight: 200; }
+
+.wrapper-3 .p-list-container .profile .profile-content h3 {
+  font-size: 20px;
+  font-weight: 700; }
+
+.wrapper-3 .p-list-container .profile .profile-content h4 {
+  font-size: 16px;
+  font-weight: 200;
+  margin-top: -5px; }
+
+.wrapper-3 .p-list-container .profile .profile-content a {
+  display: inline-block;
+  text-decoration: none;
+  background: #299;
+  width: 30px;
+  color: white;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  font-size: 16px;
+  -webkit-transition: box-shadow 400ms ease-in; }
+
+.wrapper-3 .p-list-container .profile .profile-content a:hover {
+  box-shadow: inset 0 100px #233; }
+
+.wrapper-4 {
+  padding: 50px 0 0; }
+
+.wrapper-5 {
+  text-align: center;
+  padding: 50px 0; }
+
+.wrapper-5 p {
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 500; }
+
+.wrapper-5 .btn {
+  width: 40%;
+  display: inline-block;
+  boder-radius: 2px;
+  background: #333;
+  box-shadow: inset 0 0vh #233; }
+
+.wrapper-5 .btn:hover {
+  box-shadow: inset 0 100px #233; }
+
+footer {
+  height: 75px;
+  background: #333;
+  color: white;
+  font-style: italic;
+  border-top: 7px solid #299; }
+
+footer p {
+  position: absolute;
+  bottom: 0;
+  padding: 0 20px; }
+
+footer a {
+  display: block;
+  float: right;
+  height: 100%;
+  line-height: 75px;
+  color: white;
+  background: #299;
+  margin: 0 0 0 0;
+  padding: 0 50px; }
+
+footer a:hover {
+  background: #399; }
+
+@media screen and (max-width: 768px) {
+  .container h2 {
+    font-size: 30px; }
+
+  nav {
+    background: none; }
+
+  nav a {
+    margin-left: -10px;
+    font-size: 10px; }
+
+  header h2 {
+    font-size: 35px;
+    margin: 60px 45px; }
+
+  .wrapper-3 .p-list-container {
+    -webkit-align-items: center;
+    padding: 0 50px; }
+
+  .wrapper-3 .p-list-container .profile {
+    flex: 0 0 100%;
+    margin: 50px 0 0 0;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    flex-flow: column wrap;
+    -webkit-align-items: flex-start; }
+
+  .wrapper-3 .p-list-container .profile img {
+    margin: 0; }
+
+  .wrapper-5 .btn {
+    width: 80%;
+    margin: 50px 0 0 0; }
+
+  .wrapper-5 .btn:not(:last-child) {
+    margin-top: 50px; }
+
+  .r-list a {
+    flex: 0 0 100%;
+    border-right: none; }
+
+  footer p {
+    font-size: 13px; }
+
+  footer a {
+    padding: 0 5px; } }
+
+/*# sourceMappingURL=flex.css.map */
