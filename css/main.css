@@ -67,7 +67,7 @@ ul {
   margin: 0; }
 
 h2 {
-  font-size: 35px; }
+  font-size: 2em; }
 
 ::-moz-selection {
   background-color: #133;
@@ -90,7 +90,7 @@ header {
 
 header h2 {
   margin: 50px 45px;
-  font-size: 50px;
+  font-size: 3em;
   color: #333; }
 
 header .btn-menu {
@@ -102,7 +102,7 @@ header .btn-menu {
   display: block;
   float: right;
   color: #333;
-  font-size: 75px;
+  font-size: 5em;
   margin: 0 20px 0 0;
   -webkit-text-stroke-width: 5px;
   text-shadow: 50px 0 50px tomato; }
@@ -125,9 +125,6 @@ nav {
   -ms-transform: translateX(100%) translateY(-50%);
   transform: translateX(100%) translateY(-50%);
   -webkit-transform: translateX(100%) translateY(-50%);
-  -webkit-filter: blur(100px);
-  -moz-filter: blur(100px);
-  filter: blur(100px);
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -140,8 +137,6 @@ nav {
   -ms-transform: translateX(0) translateY(-50%);
   transform: translateX(0) translateY(-50%);
   -webkit-transform: translateX(0) translateY(-50%);
-  -webkit-filter: blur(0);
-  filter: blur(0);
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out; }
 
@@ -212,7 +207,7 @@ nav a:last-child:hover {
 .ribbon {
   text-transform: uppercase;
   color: #233;
-  font-size: 25px;
+  font-size: 1.6em;
   padding: 0 50px;
   height: 75px;
   line-height: 75px;
@@ -247,15 +242,12 @@ nav a:last-child:hover {
   height: 300px;
   /*****Opera Fallback****/
   height: 50vh;
-  line-height: 300px;
-  /*****Opera Fallback****/
-  line-height: 50vh;
   text-align: center;
   font-weight: 200;
   margin-left: -3px;
   background-color: #2bc3c3;
   background-blend-mode: none;
-  font-size: 30px;
+  font-size: 1.89em;
   border-bottom: 5px solid #90cccc;
   border-right: 5px solid #90cccc;
   -webkit-transition: all .3s ease-in;
@@ -269,7 +261,7 @@ nav a:last-child:hover {
   display: block;
   width: 100%;
   height: 100%;
-  height: 50vh;
+  line-height: 300px;
   line-height: 50vh;
   background: rgba(0, 0, 0, 0.4);
   transition: all 400ms ease-out; }
@@ -284,32 +276,32 @@ nav a:last-child:hover {
   padding: 50px 0 0; }
 
 .wrapper-2 .r-list a:nth-child(1) {
-  background-image: url(img//smashingmag.jpg); }
+  background-image: url(img/smashingmag.jpg); }
 
 .wrapper-2 .r-list a:nth-child(2) {
-  background-image: url(img//teamtreehouse.jpg); }
+  background-image: url(img/teamtreehouse.jpg); }
 
 .wrapper-2 .r-list a:nth-child(3) {
-  background-image: url(img//css-tricks.png); }
+  background-image: url(img/css-tricks.png); }
 
 .wrapper-2 .r-list a:nth-child(4) {
-  background-image: url(img//codrops.png); }
+  background-image: url(img/codrops.png); }
 
 .wrapper-2 .r-list a:nth-child(5) {
-  background-image: url(img//a_list_apart.jpg); }
+  background-image: url(img/a_list_apart.jpg); }
 
 .wrapper-2 .r-list a:nth-child(6) {
-  background-image: url(img//html5_rocks.jpg); }
+  background-image: url(img/html5_rocks.jpg); }
 
 .wrapper-2 .r-list a:nth-child(7) {
-  background-image: url(img//david_Walsh.png);
+  background-image: url(img/david_Walsh.png);
   background-color: white; }
 
 .wrapper-2 .r-list a:nth-child(8) {
-  background-image: url(img//codyhouse.jpg); }
+  background-image: url(img/codyhouse.jpg); }
 
 .wrapper-2 .r-list a:nth-child(9) {
-  background-image: url(img//doc-sprint-swag.jpg); }
+  background-image: url(img/doc-sprint-swag.jpg); }
 
 .wrapper-3 {
   padding: 50px 0 0; }
@@ -341,11 +333,11 @@ nav a:last-child:hover {
   margin-left: 50px; }
 
 .wrapper-3 .p-list-container .profile .profile-content h3 {
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 600; }
 
 .wrapper-3 .p-list-container .profile .profile-content p {
-  font-size: 15px;
+  font-size: 0.99em;
   font-weight: 200;
   margin-top: -10px; }
 
@@ -359,7 +351,7 @@ nav a:last-child:hover {
   text-align: center;
   line-height: 30px;
   border-radius: 50%;
-  font-size: 16px;
+  font-size: 1em;
   -webkit-transition: box-shadow 400ms ease-in;
   -moz-transition: box-shadow 400ms ease-in;
   -o-transition: box-shadow 400ms ease-in;
@@ -378,15 +370,15 @@ nav a:last-child:hover {
   padding: 50px 0 0; }
 
 .wrapper-4 .r-list a:nth-child(1) {
-  background-image: url(img//shoptalk.png);
+  background-image: url(img/shoptalk.png);
   background-size: cover; }
 
 .wrapper-4 .r-list a:nth-child(2) {
-  background-image: url(img//the-web-ahead.jpg);
+  background-image: url(img/the-web-ahead.jpg);
   background-size: cover; }
 
 .wrapper-4 .r-list a:nth-child(3) {
-  background-image: url(img//the_big_web_show.jpg);
+  background-image: url(img/the_big_web_show.jpg);
   background-size: cover; }
 
 .wrapper-5 {
@@ -442,21 +434,23 @@ footer a:not(.footer-btn):hover {
   color: #299; }
 
 @media screen and (max-width: 768px) {
-  .container h2 {
-    font-size: 30px; }
+  body {
+    font-size: 14px; }
 
   .btn-container .btn {
     margin: 20px 0 0 0; }
 
-  nav {
-    background: none; }
+  header .btn-menu {
+    display: none; }
+  header nav {
+    display: none; }
 
   nav a {
     margin-left: -10px;
-    font-size: 10px; }
+    font-size: 0.625em; }
 
   header h2 {
-    font-size: 35px;
+    font-size: 2em;
     margin: 60px 45px; }
 
   header h2:first-word {
@@ -481,10 +475,10 @@ footer a:not(.footer-btn):hover {
     margin-right: 50px; }
 
   .wrapper-3 .p-list-container .profile .profile-content h3 {
-    font-size: 18px; }
+    font-size: 1.125em; }
 
   .wrapper-3 .p-list-container .profile .profile-content p {
-    font-size: 14px; }
+    font-size: 0.875em; }
 
   .wrapper-3 .p-list-container .profile img {
     margin: 0 15px 0; }
@@ -497,21 +491,18 @@ footer a:not(.footer-btn):hover {
     margin-top: 50px; }
 
   .r-list {
-    font-size: 16px; }
+    font-size: 1em; }
 
   .r-list a {
     width: 100%;
     border-right: none;
-    font-size: 20px; }
+    font-size: 1.25em; }
 
   footer p {
     font-size: 13px; }
 
   footer .footer-btn {
     padding: 0 5px !important; } }
-@media screen and (max-width: 640px) {
-  header h2 {
-    font-size: 25px; } }
 @media screen and (max-width: 320px) {
   .ribbon {
     padding: 0;
@@ -523,5 +514,31 @@ footer a:not(.footer-btn):hover {
   .wrapper-3 .p-list-container .profile img {
     width: 100px;
     height: 100px; } }
+@media screen and (max-height: 400px) {
+  .r-list a {
+    height: 300px;
+    line-height: 300px;
+    height: 100vh;
+    line-height: 100vh; }
+
+  .r-list a span {
+    line-height: 300px;
+    line-height: 100vh; } }
+@media screen and (max-width: 1080px) {
+  body {
+    font-size: 15px; } }
+@media screen and (max-width: 480px) {
+  .wrapper-3 .p-list-container .profile {
+    display: block;
+    text-align: center; }
+
+  .wrapper-3 .p-list-container .profile .profile-content {
+    clear: left !important;
+    margin: 0; }
+
+  .wrapper-3 .p-list-container .profile img {
+    display: block;
+    margin: 0 auto;
+    float: none !important; } }
 
 /*# sourceMappingURL=main.css.map */
